@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    Fuad Al Abir
+</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="static/dist/css/googlefont.css">
+  <link rel="stylesheet" href="static/dist/css/tailwind.css">
+</head>
+<body class="pt-serif-regular flex flex-col min-h-screen">
+
+  <div class="flex-grow">
+    <!-- Navbar -->
+    <nav class="bg-white">
+      <div class="mx-auto max-w-7xl mt-6 px-2 sm:px-6 lg:px-8">
+        <div class="relative flex h-16 items-center justify-between">
+          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <!-- Mobile menu button-->
+            <button type="button" onclick="toggleMobileMenu()" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+              <span class="absolute -inset-0.5"></span>
+              <span class="sr-only">Open main menu</span>
+              <!--
+                Icon when menu is closed.
+
+                Menu open: "hidden", Menu closed: "block"
+              -->
+              <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+              <!--
+                Icon when menu is open.
+
+                Menu open: "block", Menu closed: "hidden"
+              -->
+              <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+          <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+            <!-- Name -->
+            <div class="flex flex-shrink-0 items-center">
+              <a href="index.html" class="text-3xl font-bold">Fuad's Homepage</a>
+            </div>
+
+            <!-- Navigation Links (centered with margin auto on both sides) -->
+            <div class="hidden lg:flex justify-end items-center space-x-8 md:flex-1">
+              <div class="flex space-x-4">
+                <a href="index.html" class="text-base underline underline-offset-8 decoration-2 decoration-red-600 hover:text-black hover:underline hover:underline-offset-8 hover:decoration-2 hover:decoration-red-600 rounded-md px-3 py-2" aria-current="page">Home</a>
+                <a href="research.html" class="text-base text-gray-500 hover:text-black hover:underline hover:underline-offset-8 hover:decoration-2 hover:decoration-red-600 rounded-md px-3 py-2">Research</a>
+                <a href="not_research.html" class="text-base text-gray-500 hover:text-black hover:underline hover:underline-offset-8 hover:decoration-2 hover:decoration-red-600 rounded-md px-3 py-2">!Research</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile menu, show/hide based on menu state. -->
+      <div class="sm:hidden" id="mobile-menu">
+        <div class="space-y-1 px-2 pb-3 pt-2">
+          <a href="index.html" class="text-gray-500 hover:bg-red-600 hover:text-white block rounded-md px-2 py-2 text-base font-medium">HOME</a>
+          <a href="research.html" class="text-gray-500 hover:bg-red-600 hover:text-white block rounded-md px-2 py-2 text-base font-medium">RESEARCH</a>
+        </div>
+      </div>
+    </nav>
+
+      <!-- Main Body Section -->
+      <main>
+        
+
+<div class="container mx-auto max-w-7xl px-8 py-8">
+  <div class="md:flex md:items-start">
+
+    <!-- Description -->
+    <div class="md:w-3/4 lg:w-2/3">
+      <p class="text-lg text-gray-700 mb-4">
+        👋 Hi! I'm Fuad, currently a Graduate Research Assistant at ai.med lab at the University of Alabama at Birmingham, advised by Prof. Jake Chen.
+      </p>
+
+      <p class="text-lg text-gray-700 mb-4">
+        🎓 Prior to that, I earned a B.Sc. in Computer Science and Engineering at the Rajshahi University of Engineering and Technology where I worked with Prof. Md Al Mehedi Hasan, S. M. Shovan, and Prof. Jungpil Shin (University of Aizu, Japan).
+      </p>
+
+      <p class="text-lg text-gray-700 mb-4">
+        🔬 My research interests broadly lie on human-computer interaction, deep learning, visualization, natural language processing and AI applied to health. Currently I'm exploring curriculum tuning for large language model for domain adaptation. I'll revolutionize some of these fields!
+      </p>
+
+      <p class="text-lg text-gray-700 mb-4">
+        🔗 My Erdős & Dijkstra numbers are 5.
+      </p>
+
+      
+      <p class="text-xl mt-8"><b>News</b></p>
+      <ul class="text-lg list-disc pl-5">
+          <li class="text-gray-700 mb-4 mt-2">Our newly developed visualization tool, Mondrian Map, will be presented at IEEE BIBM in Lisbon, Portugal, from December 3–6, 2024.</li>
+      </ul>
+
+    </div>
+    
+<!-- Image + Links -->
+<div class="md:w-1/4 lg:w-1/3 md:ml-8 text-center">
+  <img src="static/assets/imgs/with-bob-c.jpg" alt="Fuad Al Abir with Bob Dylan!" class="object-contain max-w-xs mx-auto">
+  <div class="flex justify-center mt-4">
+    <p class="text-gray-700">When you realize your co-star is a bit too 'waxy' for a live duet! @ Nashville, Tennessee 2024.</p>
+  </div>
+  <div class="flex justify-center mt-4">
+    <a href="https://scholar.google.com/citations?user=z9XgyOkAAAAJ&hl=en" target="_blank" class="text-red-600 font-semibold hover:text-red-900 hover:underline hover:underline-offset-8 hover:decoration-1 hover:decoration-red-900 mx-2">Scholar</a>
+    <a href="mailto:alabir.fuad@gmail.com" class="text-red-600 font-semibold hover:text-red-900 hover:underline hover:underline-offset-8 hover:decoration-1 hover:decoration-red-900 mx-2">Email</a>
+
+  </div>
+</div>
+
+  </div>
+</div>
+
+    </main>
+  </div>
+
+    <!-- Footer -->
+    <footer class="text-center border-t border-gray-200 py-4">
+      <p class="sm:text-center text-sm text-gray-500">&copy; 2024 Fuad Al Abir. Template Credit: <a href="https://www.vascoxu.com/" target="_blank"><span class="hover:underline hover:underline-offset-4">Vasco Xu</span></a>.</p>
+    </footer>
+
+    <!-- JavaScript file -->
+    <script src="static/scripts/scripts.js"></script>
+</body>
+</html>

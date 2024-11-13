@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    Fuad Al Abir | Not Research
+</title>
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="static/dist/css/googlefont.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="static/dist/css/tailwind.css">
+</head>
+<body class="pt-serif-regular flex flex-col min-h-screen">
+
+  <div class="flex-grow">
+    <!-- Navbar -->
+    <nav class="bg-white">
+      <div class="mx-auto max-w-7xl mt-6 px-2 sm:px-6 lg:px-8">
+        <div class="relative flex h-16 items-center justify-between">
+          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <!-- Mobile menu button-->
+            <button type="button" onclick="toggleMobileMenu()" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+              <span class="absolute -inset-0.5"></span>
+              <span class="sr-only">Open main menu</span>
+              <!--
+                Icon when menu is closed.
+
+                Menu open: "hidden", Menu closed: "block"
+              -->
+              <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+              <!--
+                Icon when menu is open.
+
+                Menu open: "block", Menu closed: "hidden"
+              -->
+              <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+          <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+            <!-- Name -->
+            <div class="flex flex-shrink-0 items-center">
+              <a href="index.html" class="text-3xl font-bold">Fuad's Homepage</a>
+            </div>
+
+            <!-- Navigation Links (centered with margin auto on both sides) -->
+            <div class="hidden lg:flex justify-end items-center space-x-8 md:flex-1">
+              <div class="flex space-x-4">
+                <a href="index.html" class="text-base text-gray-500 hover:text-black hover:underline hover:underline-offset-8 hover:decoration-2 hover:decoration-red-600 rounded-md px-3 py-2" aria-current="page">Home</a>
+                <a href="research.html" class="text-base text-gray-500 hover:text-black hover:underline hover:underline-offset-8 hover:decoration-2 hover:decoration-red-600 rounded-md px-3 py-2">Research</a>
+                <a href="not_research.html" class="text-base underline underline-offset-8 decoration-2 decoration-red-600 hover:text-black hover:underline hover:underline-offset-8 hover:decoration-2 hover:decoration-red-600 rounded-md px-3 py-2">!Research</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile menu, show/hide based on menu state. -->
+      <div class="sm:hidden" id="mobile-menu">
+        <div class="space-y-1 px-2 pb-3 pt-2">
+          <a href="index.html" class="text-gray-500 hover:bg-red-600 hover:text-white block rounded-md px-2 py-2 text-base font-medium">HOME</a>
+          <a href="research.html" class="text-gray-500 hover:bg-red-600 hover:text-white block rounded-md px-2 py-2 text-base font-medium">RESEARCH</a>
+        </div>
+      </div>
+    </nav>
+
+      <!-- Main Body Section -->
+      <main>
+
+<div class="container mx-auto max-w-7xl mt-8 px-8 py-8">
+  <h2 class="text-3xl font-light text-gray-900 mb-4">Write-ups</h2>
+
+    <!-- Publication Entry -->
+    <div class="flex flex-col md:flex-row bg-white mt-8">
+      <!-- Teaser Image -->
+      <div class="md:w-1/2 mt-1">
+        <img src="static/assets/portfolio/roar.jpg" class="object-contain mx-auto" alt="Mondrian Map Teaser">
+      </div>
+      <!-- Pub. Description -->
+      <div class="md:w-2/3 md:pl-6">
+        <h2 class="text-xl font-semibold text-gray-900 md:mt-0">Contributed 30 In-Depth Feature Stories to Roar Bangla in my Freshmen and Sophmore years.</h2>
+        <p class="mt-2">I’ve explored a wide range of topics, including science, literature, philosophy, photography, film, and local communities. Highlights include:</p>
+          <ul>
+            <li class="mt-2">1. "Subodh, Keep an Eye on the Sun!" — My article on the mysterious stencil art in Dhaka that captured international media attention. <a href="https://archive.roar.media/bangla/main/bangladesh/protesting-wall-art-in-dhaka" target="_blank" class="text-red-600 hover:text-gray-500 mr-2">[ <span class="hover:underline hover:underline-offset-4">Link</span> ]</a>
+            </li>
+            <li class="mt-2">2. The Manta community: boat-dwelling fishers bound by a cycle of debt, striving for a better future. <a href="https://archive.roar.media/bangla/main/bangladesh/life-on-the-river" target="_blank" class="text-red-600 hover:text-gray-500 mr-2">[ <span class="hover:underline hover:underline-offset-4">Link</span> ]</a>
+            </li></li>
+            <li class="mt-2">3. A Critique of the Timeless Classic - Stanley Kubrick’s 2001: A Space Odyssey <a href="https://archive.roar.media/bangla/main/book-movie/2001-a-space-odyssey" target="_blank" class="text-red-600 hover:text-gray-500 mr-2">[ <span class="hover:underline hover:underline-offset-4">Link</span> ]</a>
+            </li></li>
+          </ul>
+        <!-- Links -->
+        <div class="mt-6">
+          <a href="https://archive.roar.media/author/fuad" target="_blank" class="text-red-600 hover:text-gray-500 mr-2">[ <span class="hover:underline hover:underline-offset-4">Author's Profile</span> ]</a>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="container mx-auto max-w-7xl mt-8 px-8 py-8">
+  <h2 class="text-3xl font-light text-gray-900 mb-4">Book Covers</h2>
+    <div class="flex flex-col md:flex-row bg-white mt-8">
+        <figure class="md:w-1/5 mr-6">
+            <img src="static/assets/portfolio/book-covers/badda.png" alt="Badda General Cover" class="w-full h-auto">
+            <figcaption class="text-center text-sm mt-2">Badda General, an autobiographical novel by Tyabur Rahman; published in Amar Ekushey Grontho Mela 2019. Link: <a href="https://www.rokomari.com/book/179410/badda-genarel" target="_blank"><span class="text-red-600 hover:text-gray-500 hover:underline hover:underline-offset-4">rokomari.com</span></a></figcaption>
+        </figure>
+        <figure class="md:w-1/5 mr-6">
+            <img src="static/assets/portfolio/book-covers/zugjatra.jpg" alt="Zugzatra Cover" class="w-full h-auto">
+            <figcaption class="text-center text-sm mt-2">An epic journey into a birth of a nation state. Genre: Historical Fiction; to be published in 2026.</figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="container mx-auto max-w-7xl mt-8 px-8 py-8">
+  <h2 class="text-3xl font-light text-gray-900 mb-4">Logos</h2>
+    <div class="flex flex-col md:flex-row bg-white mt-8">
+        <figure class="md:w-1/4 mr-4">
+            <img src="static/assets/portfolio/logos/socchar.png" alt="Badda General Cover" class="w-full h-auto">
+            <figcaption class="text-center text-sm mt-2">I volunteer with Socchar, a US-based human rights group active in Bangladesh, focusing on oppression, enforced disappearances, extrajudicial killings, and marginalized rights. Link: <a href="https://socchar.com/" target="_blank"><span class="text-red-600 hover:text-gray-500 hover:underline hover:underline-offset-4">socchar.com</span></a>
+            </figcaption>
+        </figure>
+        <figure class="md:w-1/4 mr-4">
+            <img src="static/assets/portfolio/logos/rit.png" alt="Zugzatra Cover" class="w-full h-auto">
+            <figcaption class="text-center text-sm mt-2">Designed the logo for Research & Integration Thoughts (RIT), an independent think tank soon to launch in Bangladesh, inspired by the MIT logo!
+            </figcaption>
+        </figure>
+    </div>
+</div>
+<div class="container mx-auto max-w-7xl mt-8 px-8 py-8">
+  <h2 class="text-3xl font-light text-gray-900 mb-4">Solo Travels & Photography</h2>
+    <div class="flex flex-col md:flex-row bg-white">
+        <figure class="md:w-1/4 mr-4 mt-8">
+            <img src="static/assets/portfolio/travels/rohingya-camp.jpg" alt="Rohingya Refugee Camp" class="w-full h-auto">
+            <figcaption class="text-center text-sm mt-2">In Front of the Rohingya Refugee Camp, Ukhia, Cox’s Bazar – February 23, 2023
+            </figcaption>
+        </figure>
+        <figure class="md:w-1/4 mr-4 mt-8">
+            <img src="static/assets/portfolio/travels/rohingya-school.jpg" alt="A Rohingya Refugee Camp School" class="w-full h-auto">
+            <figcaption class="text-center text-sm mt-2">A Vibrant School in the Rohingya Refugee Camp – February 22, 2023
+            </figcaption>
+        </figure>
+        <figure class="md:w-1/4 mr-4 mt-8">
+            <img src="static/assets/portfolio/photography/lonely-house.jpg" alt="Rohingya Refugee Camp" class="w-full h-auto">
+            <figcaption class="text-center text-sm mt-2">A Lonely House at the Shore of Cox's Bazar – February 24, 2023
+            </figcaption>
+        </figure>
+        <figure class="md:w-1/4 mr-4 mt-8">
+            <img src="static/assets/portfolio/photography/shampan.jpg" alt="A shampan at the beach" class="w-full h-auto">
+            <figcaption class="text-center text-sm mt-2">Graceful Shampan Boats Resting on the Shores of Cox’s Bazar – February 24, 2023
+            </figcaption>
+        </figure>
+
+    </div>
+    <div class="flex flex-col md:flex-row bg-white">
+        <figure class="md:w-1/4 mr-4 mt-8">
+            <img src="static/assets/portfolio/photography/atlia.jpg" alt="A Rohingya Refugee Camp School" class="w-full h-auto">
+            <figcaption class="text-center text-sm mt-2">Drifting on a Tranquil Lake Beside My Ancestral Home - December 13, 2012
+            </figcaption>
+        </figure>
+        <figure class="md:w-1/4 mr-4 mt-8">
+            <img src="static/assets/portfolio/photography/cheese.jpg" alt="Rohingya Refugee Camp" class="w-full h-auto">
+            <figcaption class="text-center text-sm mt-2">Handcrafted Cheese in Kishoreganj, Bangladesh – February 16, 2023
+            </figcaption>
+        </figure>
+        <figure class="md:w-1/4 mr-4 mt-8">
+            <img src="static/assets/portfolio/photography/undulatus-asperatus.jpg" alt="A Rohingya Refugee Camp School" class="w-full h-auto">
+            <figcaption class="text-center text-sm mt-2">Undulatus Asperatus cloud seen at the Rajshahi University of Engineering and Technology campus, Rajshahi, Bangladesh – April 22, 2017
+            </figcaption>
+        </figure>
+        <figure class="md:w-1/4 mr-4 mt-8">
+            <img src="static/assets/portfolio/travels/gulf-of-mexico.jpg" alt="Gulf of Mexico" class="w-full h-auto">
+            <figcaption class="text-center text-sm mt-2">Dawn at the Gulf of Mexico, Biloxi, MS - October 29, 2023
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+    </main>
+  </div>
+
+    <!-- Footer -->
+    <footer class="text-center border-t border-gray-200 py-4">
+      <p class="sm:text-center text-sm text-gray-500">&copy; 2024 Fuad Al Abir. Template Credit: <a href="https://www.vascoxu.com/" target="_blank"><span class="hover:underline hover:underline-offset-4">Vasco Xu</span></a>.</p>
+    </footer>
+
+    <!-- JavaScript file -->
+    <script src="static/scripts/scripts.js"></script>
+</body>
+</html>
