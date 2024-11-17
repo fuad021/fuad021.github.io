@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    Fuad Al Abir | Research
+</title>
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="static/dist/css/googlefont.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="static/dist/css/tailwind.css">
+</head>
+<body class="pt-serif-regular flex flex-col min-h-screen">
+
+  <div class="flex-grow">
+    <!-- Navbar -->
+    <nav class="bg-white">
+      <div class="mx-auto max-w-7xl mt-6 px-2 sm:px-6 lg:px-8">
+        <div class="relative flex h-16 items-center justify-between">
+          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <!-- Mobile menu button-->
+            <button type="button" onclick="toggleMobileMenu()" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+              <span class="absolute -inset-0.5"></span>
+              <span class="sr-only">Open main menu</span>
+              <!--
+                Icon when menu is closed.
+
+                Menu open: "hidden", Menu closed: "block"
+              -->
+              <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+              <!--
+                Icon when menu is open.
+
+                Menu open: "block", Menu closed: "hidden"
+              -->
+              <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+          <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+            <!-- Name -->
+            <div class="flex flex-shrink-0 items-center">
+              <a href="index.html" class="text-3xl font-bold">Fuad's Homepage</a>
+            </div>
+
+            <!-- Navigation Links (centered with margin auto on both sides) -->
+            <div class="hidden lg:flex justify-end items-center space-x-8 md:flex-1">
+              <div class="flex space-x-4">
+                <a href="index.html" class="text-base text-gray-500 hover:text-black hover:underline hover:underline-offset-8 hover:decoration-2 hover:decoration-red-600 rounded-md px-3 py-2" aria-current="page">Home</a>
+                <a href="research.html" class="text-base text-gray-500 hover:text-black hover:underline hover:underline-offset-8 hover:decoration-2 hover:decoration-red-600 rounded-md px-3 py-2" aria-current="page">Research</a>
+                <a href="industry.html" class="text-base underline underline-offset-8 decoration-2 decoration-red-600 hover:text-black hover:underline hover:underline-offset-8 hover:decoration-2 hover:decoration-red-600 rounded-md px-3 py-2">Industry R&D</a>
+                <a href="not_research.html" class="text-base text-gray-500 hover:text-black hover:underline hover:underline-offset-8 hover:decoration-2 hover:decoration-red-600 rounded-md px-3 py-2">!Research</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile menu, show/hide based on menu state. -->
+      <div class="sm:hidden" id="mobile-menu">
+        <div class="space-y-1 px-2 pb-3 pt-2">
+          <a href="index.html" class="text-gray-500 hover:bg-red-600 hover:text-white block rounded-md px-2 py-2 text-base font-medium">Home</a>
+          <a href="research.html" class="text-gray-500 hover:bg-red-600 hover:text-white block rounded-md px-2 py-2 text-base font-medium">Research</a>
+          <a href="industry.html" class="text-gray-500 hover:bg-red-600 hover:text-white block rounded-md px-2 py-2 text-base font-medium">Industry R&D</a>
+          <a href="not_research.html" class="text-gray-500 hover:bg-red-600 hover:text-white block rounded-md px-2 py-2 text-base font-medium">!Research</a>
+        </div>
+      </div>
+    </nav>
+
+      <!-- Main Body Section -->
+      <main>
+        
+<div class="container mx-auto max-w-7xl mt-8 px-8 py-8">
+  <h2 class="text-3xl font-light text-gray-900 mb-4">Projects</h2>
+    <!-- Publication Entry -->
+    <div class="flex flex-col md:flex-row bg-white mt-8">
+      <!-- Teaser Image -->
+      <div class="md:w-1/4 mt-1">
+        <img src="static/assets/projects/ROM.gif" class="object-contain mx-auto" alt="Mondrian Map Teaser">
+      </div>
+      <!--<div class="md:w-1/4 mt-1">
+        <img src="static/assets/pubs/teasers/lung.gif" class="object-contain mx-auto" alt="Lung Cancer Biomarker Identification Teaser">
+      </div>-->
+      <!-- Pub. Description -->
+      <div class="md:w-2/3 md:pl-6">
+        <h2 class="text-xl font-semibold text-gray-900 md:mt-0">Automated Range of Motion (ROM) Measurement using Human Pose Estimation</h2>
+        <div class="tracking-wide mt-2">
+          <span class="text-red-800 font-medium">MyMedicalHUB Corp., FL, USA</span>
+        </div>
+        <p class="mt-2 text-gray-600">We developed an automated Range of Motion (ROM) measurement web/mobile application for patient and healthcare providers with real-time monitoring and scalable deployment. The platform integrates <u class="underline-offset-4">over 200 active and passive ROM exercises</u>, utilizing full-body pose estimation models to accurately analyze patient videos. I also contributed developing a novel <u class="underline-offset-4">3D pose estimation</u> technique to enhance the measurement of <u class="underline-offset-4">trunk rotation ROM</u>. Moreover, to boost model precision, we <u class="underline-offset-4">fine-tuned</u> exercise-specific pose estimation models using <u class="underline-offset-4">custom in-house datasets</u>.
+
+        <br>
+        <br>
+        For scalability, I designed a distributed system with a master-slave architecture to efficiently manage high-volume API requests. We also leveraged Amazon EC2 and S3 to ensure a robust, cloud-based infrastructure, supporting seamless ROM assessments in both telehealth and clinical environments.</p>
+      </div>
+    </div>
+
+    <!--  GAIT  -->
+    <!-- Divider Line -->
+    <hr class="my-8 border-gray-200" />
+    <!-- Publication Entry -->
+    <div class="flex flex-col md:flex-row bg-white mt-8">
+      <!-- Teaser Image -->
+      <div class="md:w-1/4 mt-1">
+        <img src="static/assets/projects/gait.gif" class="object-contain mx-auto" alt="Gait Recognition Teaser">
+        <img src="static/assets/projects/signal.png" class="object-contain mx-auto" alt="Air-writing Recognition Teaser">
+      </div>
+      <!-- Pub. Description -->
+      <div class="md:w-2/3 md:pl-6">
+        <h2 class="text-xl font-semibold text-gray-900 md:mt-0">Abnormal Gait Analysis using Video-based Signal Processing</h2>
+        <div class="tracking-wide mt-2">
+          <span class="text-red-800 font-medium">MyMedicalHUB Corp, FL, USA</span>
+        </div>
+        <p class="mt-2 text-gray-600">This project focuses on the development of an advanced <u class="underline-offset-4">gait event and abnormality</u> detection system using pose estimation techniques. The system incorporates a signal-based approach to improve the accuracy of gait event detection, outperforming traditional angle-based methods, resulted in a <u class="underline-offset-4">patented solution</u>. The project involved analyzing a diverse range of abnormal gait patterns, including <u class="underline-offset-4">Antalgic</u>, <u class="underline-offset-4">Ataxic</u>, <u class="underline-offset-4">Hemiplegic</u>, <u class="underline-offset-4">Parkinsonian</u>, and <u class="underline-offset-4">Trendelenburg</u> gaits, using an in-house database of <u class="underline-offset-4">human participants</u>. Collaborating closely with MyMedicalHUB's (MMH) clinical team of physicians and physical therapists, the project ensured clinical relevance and accuracy.</p>
+      </div>
+    </div>
+
+    <!--  AIR-WRITING  -->
+    <!-- Divider Line -->
+    <hr class="my-8 border-gray-200" />
+    <!-- Publication Entry -->
+    <div class="flex flex-col md:flex-row bg-white mt-8">
+      <!-- Teaser Image -->
+      <div class="md:w-1/4 mt-1">
+        <img src="static/assets/projects/balance.png" class="object-contain mx-auto" alt="Air-writing Recognition Teaser">
+      </div>
+      <!-- Pub. Description -->
+      <div class="md:w-2/3 md:pl-6">
+        <h2 class="text-xl font-semibold text-gray-900 md:mt-0">Balance and Fall Risk Assessment for Elderly Patients</h2>
+        <div class="tracking-wide mt-2">
+          <span class="text-red-800 font-medium">MyMedicalHUB Corp., FL, USA</span>
+        </div>
+        <p class="mt-2 text-gray-600">This project focuses on developing a video-based system for balance monitoring and fall risk assessment for elderly patients. Using joint distortion metrics from a reference axis (white line shown in the image), the system predicts balance scores and fall risks incorporating <u class="underline-offset-4">Timed Up and Go Test (TUG)</u> and <u class="underline-offset-4">Berg Balance Scale (BBS)</u> tests. Designed for real-world clinical environments, the solution integrates computer vision techniques to enhance safety and improve elderly care outcomes.</p>
+      </div>
+    </div>
+
+    <!--  AIR-WRITING  -->
+    <!-- Divider Line -->
+    <hr class="my-8 border-gray-200" />
+    <!-- Publication Entry -->
+    <div class="flex flex-col md:flex-row bg-white mt-8">
+      <!-- Teaser Image -->
+      <div class="md:w-1/4 mt-1">
+        <img src="static/assets/projects/safegaze.png" class="object-contain mx-auto" alt="Air-writing Recognition Teaser">
+      </div>
+      <!-- Pub. Description -->
+      <div class="md:w-2/3 md:pl-6">
+        <h2 class="text-xl font-semibold text-gray-900 md:mt-0">Safegaze API for Kahf Browser</h2>
+        <div class="tracking-wide mt-2">
+          <span class="text-red-800 font-medium">Halalz e-Ticaret Ltd., Turkey</span>
+        </div>
+        <p class="mt-2 text-gray-600">We developed a lightweight computer vision pipeline for <a href="https://play.google.com/store/apps/details?id=org.halalz.kahfbrowser" target="_blank" class="text-red-600 hover:text-gray-500"><span class="hover:underline hover:underline-offset-4">Kahf Android Browser</span></a> (10K+ downloads), ensuring safe browsing experience aligned with Islamic values <i>(Featured in <a href="https://www.thedailystar.net/tech-startup/news/meet-the-app-and-browser-extension-made-halal-internet-experience-3583186" target="_blank" class="text-red-600 hover:text-gray-500"><span class="hover:underline hover:underline-offset-4">The Daily Star</span></a>).</i></p>
+      </div>
+    </div>
+
+</div>
+
+    </main>
+  </div>
+
+    <!-- Footer -->
+    <footer class="text-center border-t border-gray-200 py-4">
+      <p class="sm:text-center text-sm text-gray-500">&copy; 2024 Fuad Al Abir. Template Credit: <a href="https://www.vascoxu.com/" target="_blank"><span class="hover:underline hover:underline-offset-4">Vasco Xu</span></a>.</p>
+    </footer>
+
+    <!-- JavaScript file -->
+    <script src="static/scripts/scripts.js"></script>
+</body>
+</html>
